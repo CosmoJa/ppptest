@@ -48,3 +48,6 @@ module "elb" {
 #   subnet_groups = module.vpc.subnet_groups
 #   security_groups = module.security_group.security_groups
 # }
+module "S3" {
+  source = "./s3"
+}
