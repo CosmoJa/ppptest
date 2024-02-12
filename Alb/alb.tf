@@ -14,7 +14,6 @@ resource "aws_autoscaling_attachment" "asg_attachment" {
 #   id = var.public_subnet
 # }
 
-
 resource "aws_lb" "class" {
   name               = "test-elb"
   subnets            = [var.public_subnet1, var.public_subnet2]
